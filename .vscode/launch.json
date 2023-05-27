@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "version": "0.2.0",
+      "configurations": [
+        {
+          "name": "c_debug",
+          "type": "lldb",
+          "request": "launch",
+          "program": "${fileDirname}/${fileBasenameNoExtension}",
+          "args": [],
+          "cwd": "${fileDirname}",
+          "preLaunchTask": "c_build"
+        }
+      ]
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
@@ -11,3 +25,32 @@
     }
   ]
 }
+
+// {
+//       "name": "C++ Debug",
+//       "type": "cppdbg",
+//       "request": "launch",
+//       "program": "${fileDirname}/${fileBasenameNoExtension}",
+//       "args": [],
+//       "stopAtEntry": false,
+//       "cwd": "${fileDirname}",
+//       "environment": [],
+//       "externalConsole": false,
+//       "MIMode": "gdb",
+//       "setupCommands": [
+//         {
+//           "description": "Enable pretty-printing for gdb",
+//           "text": "-enable-pretty-printing",
+//           "ignoreFailures": true
+//         }
+//       ],
+//       "preLaunchTask": "GCC Build"
+//     },
+//     {
+//       "name": "C/C++ Runner: Debug Session",
+//       "type": "lldb",
+//       "request": "launch",
+//       "args": [],
+//       "cwd": "/Users/hajirokenji/workspace/c++/study",
+//       "program": "/Users/hajirokenji/workspace/c++/study/build/Debug/outDebug"
+//     }
